@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 3s;
+}
+
+.wrap{
+    width: 100%;
+    height: 100vh;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(4,255,193,1) 0%, rgba(0,160,255,1) 100%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    transition: 2.5s;
+}
+
+.info{
+    width: 400px;
+    height: 250px;
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    bottom: 50px;
+    transition: 2.5s;
+}
+
+
+.row{
+    width: 100%;
+    height: 33.3%;
+    border-bottom: 2px solid #999;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.check{
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    transition: 2.5s;
+}
+
+.actualy-feels{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.upper{
+    font-size: 21px;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.lower{
+    font-size: 14px;
+}
+
+p{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+input{
+    padding: 5px 10px;
+    border-radius: 7px;
+    border: 1px solid #999;
+    color: cornflowerblue;
+    outline: none;
+}
+
+.img-weather{
+    width: 150px;
+    height: 96px;
+    background-size: cover;
+    background-image: url(./Sun-And-Cloud-PNG-HD.png);
+}
+
+button{
+    padding: 8px 20px;
+    border-radius: 10px;
+    background-color: yellow;
+    border: none;
+    color: blue;
+    box-shadow: 0 0 5px rgb(159, 159, 159)
+}
+
+.row-nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-direction: row;
+}
+
+.bottom{
+    bottom: 15px;
+    position: relative;
+}
+
+.cloudy{
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+}
+
+.red{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,63,4,1) 0%, rgba(253,255,0,1) 100%);
+}
+
+.blue{
+    background: rgb(245,255,4);
+    background: linear-gradient(90deg, rgba(245,255,4,1) 0%, rgba(106,125,136,1) 57%);
+}
+
+.grey{
+    background: rgb(106,125,136);
+    background: linear-gradient(90deg, rgba(106,125,136,1) 31%, rgba(4,173,255,1) 100%);
+}
+
+@media screen and (max-width:900px){
+    .wrap{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column-reverse;
+
+    }
+}

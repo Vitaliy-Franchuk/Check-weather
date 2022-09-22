@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer"></script>
+    <title>Weather</title>
+</head>
+<body>
+
+    <div class="wrap">
+
+        <div class="info" id="info">
+            <div class="row-nav row">
+                <p id="city" class="bottom upper"></p>
+                <p id="country" class="bottom upper"></p>
+            </div>
+            <div class="row-degrees row">
+                <div class="actualy-feels">
+                    <p class="lower">Actualy &#176C</p>
+                    <p class="upper" id="degrees"></p>
+                </div>
+                <div class="actualy-feels">
+                    <p class="lower">Feels like &#176C</p>
+                    <p class="upper" id="feelsLike"></p>
+                </div>
+            </div>
+            <div class="row-clouds row">
+                <div class="cloudy" id="imgCloudy"></div>
+                <p class="upper" id="textCloud"></p>
+            </div>
+
+        </div>
+
+
+        <div class="check">
+            <div class="img-weather"></div>
+            <input type="text" placeholder="Input your city" id="inp">
+            <button id="btn">Check weather</button>
+
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
